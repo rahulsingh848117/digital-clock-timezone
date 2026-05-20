@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock - Multiple Time Zones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>World Clock</h1>
+        <p class="subtitle">Current time across different time zones</p>
+        
+        <!-- Add Timezone Section -->
+        <div class="add-timezone-section">
+            <div class="timezone-input-group">
+                <select id="timezoneSelect">
+                    <option value="">Select a timezone...</option>
+                    <option value="UTC">UTC (Coordinated Universal Time)</option>
+                    <option value="America/New_York">New York (EST/EDT)</option>
+                    <option value="America/Chicago">Chicago (CST/CDT)</option>
+                    <option value="America/Denver">Denver (MST/MDT)</option>
+                    <option value="America/Los_Angeles">Los Angeles (PST/PDT)</option>
+                    <option value="America/Anchorage">Anchorage (AKST/AKDT)</option>
+                    <option value="Pacific/Honolulu">Honolulu (HST)</option>
+                    <option value="Europe/London">London (GMT/BST)</option>
+                    <option value="Europe/Paris">Paris (CET/CEST)</option>
+                    <option value="Europe/Berlin">Berlin (CET/CEST)</option>
+                    <option value="Europe/Moscow">Moscow (MSK)</option>
+                    <option value="Asia/Dubai">Dubai (GST)</option>
+                    <option value="Asia/Kolkata">India - New Delhi (IST)</option>
+                    <option value="Asia/Bangkok">Bangkok (ICT)</option>
+                    <option value="Asia/Shanghai">Shanghai (CST)</option>
+                    <option value="Asia/Hong_Kong">Hong Kong (HKT)</option>
+                    <option value="Asia/Tokyo">Tokyo (JST)</option>
+                    <option value="Asia/Seoul">Seoul (KST)</option>
+                    <option value="Australia/Sydney">Sydney (AEDT/AEST)</option>
+                    <option value="Australia/Melbourne">Melbourne (AEDT/AEST)</option>
+                    <option value="Pacific/Auckland">Auckland (NZDT/NZST)</option>
+                    <option value="Asia/Singapore">Singapore (SGT)</option>
+                    <option value="Asia/Jakarta">Jakarta (WIB)</option>
+                    <option value="America/Toronto">Toronto (EST/EDT)</option>
+                    <option value="America/Mexico_City">Mexico City (CST/CDT)</option>
+                    <option value="America/Sao_Paulo">São Paulo (BRT/BRST)</option>
+                    <option value="Africa/Cairo">Cairo (EET)</option>
+                    <option value="Africa/Johannesburg">Johannesburg (SAST)</option>
+                </select>
+                <button id="addBtn">Add Timezone</button>
+            </div>
+        </div>
+
+        <!-- Clocks Container -->
+        <div class="clocks-container" id="clocksContainer">
+            <!-- Clocks will be added here dynamically -->
+        </div>
+
+        <!-- Default message when no timezones added -->
+        <div class="empty-state" id="emptyState">
+            <p>👆 Select a timezone above to add a clock</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
